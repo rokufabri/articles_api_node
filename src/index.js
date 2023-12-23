@@ -7,7 +7,7 @@ const PORT = '3200'
 //Middlewares
 app.use(morgan('dev'))
 app.use(express.json())
-app.use('/api',articles_routes)
+app.use('https://articles-yrku.onrender.com/api',articles_routes)
 
 //Listening server
 app.listen(PORT,() => {
